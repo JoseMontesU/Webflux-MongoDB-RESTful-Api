@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: neo.123
+      MONGO_INITDB_ROOT_DATABASE: my_db
+    ports:
+      - 27017:27017
